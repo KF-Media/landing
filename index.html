@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KF MEDIA - Solusi Kreatif untuk Media Digital Anda</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Feather Icons CDN -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <!-- AOS.js CDN -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="icon" href="https://img.icons8.com/ios-filled/50/000000/media.png" />
+  <style>
+    /* Custom scrollbar for dark mode */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: #888;
+      border-radius: 4px;
+    }
+    .dark::-webkit-scrollbar-thumb {
+      background-color: #bbb;
+    }
+  </style>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500">
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" aria-label="WhatsApp" 
+     class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50 flex items-center justify-center">
+    <!-- Ganti dengan icon WhatsApp SVG yang lebih modern -->
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" viewBox="0 0 32 32" fill="currentColor">
+      <path d="M16 3C9.373 3 4 8.373 4 15c0 2.65.87 5.11 2.36 7.13L4 29l7.13-2.36A11.93 11.93 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.95 0-3.8-.51-5.41-1.48l-.39-.23-4.23 1.4 1.4-4.23-.23-.39A9.94 9.94 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.07-7.75c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.18-.43-2.25-1.37-.83-.74-1.39-1.65-1.56-1.93-.16-.28-.02-.43.12-.57.13-.13.28-.32.42-.48.14-.16.18-.28.28-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47-.16-.01-.34-.01-.52-.01-.18 0-.48.07-.73.34-.25.27-.97.95-.97 2.32 0 1.37.99 2.7 1.13 2.89.14.18 1.95 2.98 4.74 4.06.66.28 1.17.45 1.57.58.66.21 1.26.18 1.73.11.53-.08 1.65-.67 1.88-1.32.23-.65.23-1.2.16-1.32-.07-.12-.25-.19-.53-.33z"/>
+    </svg>
+  </a>
+
+  <!-- Header & Navigation -->
+  <header class="sticky top-0 bg-white dark:bg-gray-900 shadow z-40">
+    <nav class="container mx-auto flex items-center justify-between p-4">
+      <a href="#hero" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">KF MEDIA</a>
+      <ul class="hidden md:flex space-x-6 text-gray-700 dark:text-gray-300">
+        <li>
+          <a href="#about"
+            class="font-bold relative transition-all duration-200 ease-in-out hover:scale-110 focus:scale-110 active:scale-105
+            hover:after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px]
+            after:w-0 after:h-0 after:border-l-4 after:border-r-4 after:border-b-4
+            after:border-l-transparent after:border-r-transparent after:border-b-blue-500
+            after:opacity-0 hover:after:opacity-100 hover:after:w-2 hover:after:h-2"
+          >Tentang Kami</a>
+        </li>
+        <li>
+          <a href="#services"
+            class="font-bold relative transition-all duration-200 ease-in-out hover:scale-110 focus:scale-110 active:scale-105
+            hover:after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px]
+            after:w-0 after:h-0 after:border-l-4 after:border-r-4 after:border-b-4
+            after:border-l-transparent after:border-r-transparent after:border-b-blue-500
+            after:opacity-0 hover:after:opacity-100 hover:after:w-2 hover:after:h-2"
+          >Layanan</a>
+        </li>
+        <li>
+          <a href="#order"
+            class="font-bold relative transition-all duration-200 ease-in-out hover:scale-110 focus:scale-110 active:scale-105
+            hover:after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px]
+            after:w-0 after:h-0 after:border-l-4 after:border-r-4 after:border-b-4
+            after:border-l-transparent after:border-r-transparent after:border-b-blue-500
+            after:opacity-0 hover:after:opacity-100 hover:after:w-2 hover:after:h-2"
+          >Order</a>
+        </li>
+        <li>
+          <a href="#portfolio"
+            class="font-bold relative transition-all duration-200 ease-in-out hover:scale-110 focus:scale-110 active:scale-105
+            hover:after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px]
+            after:w-0 after:h-0 after:border-l-4 after:border-r-4 after:border-b-4
+            after:border-l-transparent after:border-r-transparent after:border-b-blue-500
+            after:opacity-0 hover:after:opacity-100 hover:after:w-2 hover:after:h-2"
+          >Portofolio</a>
+        </li>
+        <li>
+          <a href="#testimonials"
+            class="font-bold relative transition-all duration-200 ease-in-out hover:scale-110 focus:scale-110 active:scale-105
+            hover:after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px]
+            after:w-0 after:h-0 after:border-l-4 after:border-r-4 after:border-b-4
+            after:border-l-transparent after:border-r-transparent after:border-b-blue-500
+            after:opacity-0 hover:after:opacity-100 hover:after:w-2 hover:after:h-2"
+          >Testimoni</a>
+        </li>
+        <li>
+          <a href="#contact"
+            class="font-bold relative transition-all duration-200 ease-in-out hover:scale-110 focus:scale-110 active:scale-105
+            hover:after:content-[''] after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px]
+            after:w-0 after:h-0 after:border-l-4 after:border-r-4 after:border-b-4
+            after:border-l-transparent after:border-r-transparent after:border-b-blue-500
+            after:opacity-0 hover:after:opacity-100 hover:after:w-2 hover:after:h-2"
+          >Kontak</a>
+        </li>
+      </ul>
+      <div class="md:hidden">
+        <button id="navToggle" aria-label="Toggle Navigation" class="text-gray-700 dark:text-gray-300 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden bg-white dark:bg-gray-900 px-4 pb-4 md:hidden">
+      <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+        <li><a href="#about" class="block hover:text-indigo-600 dark:hover:text-indigo-400">Tentang Kami</a></li>
+        <li><a href="#services" class="block hover:text-indigo-600 dark:hover:text-indigo-400">Layanan</a></li>
+        <li><a href="#order" class="block hover:text-indigo-600 dark:hover:text-indigo-400">Order</a></li>
+        <li><a href="#portfolio" class="block hover:text-indigo-600 dark:hover:text-indigo-400">Portofolio</a></li>
+        <li><a href="#testimonials" class="block hover:text-indigo-600 dark:hover:text-indigo-400">Testimoni</a></li>
+        <li><a href="#contact" class="block hover:text-indigo-600 dark:hover:text-indigo-400">Kontak</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-4 bg-gradient-to-r from-indigo-600 to-indigo-900 text-white" data-aos="fade-up">
+    <img src="Asset/KF.png" alt="KF MEDIA Logo" class="logo mb-2 mx-auto max-w-[300px] h-auto" />
+<h1 class="text-4xl md:text-5xl font-extrabold mb-3 max-w-3xl whitespace-normal mx-auto">Solusi Kreatif Untuk Semua Kebutuhan Digital Bisnismu</h1>
+    <div class="flex flex-col sm:flex-row gap-8 mt-6">
+      <a href="#contact" class="bg-indigo-400 hover:bg-indigo-500 text-white font-bold px-8 py-4 rounded-lg shadow-lg transition">Konsultasi Gratis</a>
+      <a href="#order" class="bg-white text-indigo-700 font-bold px-8 py-4 rounded-lg shadow-lg transition">Pesan Sekarang</a>
+    </div>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section id="about" class="container mx-auto px-4 py-16" data-aos="fade-right">
+    <h2 class="text-3xl font-bold mb-6 text-center text-indigo-600 dark:text-indigo-400">Tentang Kami</h2>
+    <div class="max-w-4xl mx-auto text-center text-gray-700 dark:text-gray-300 space-y-6">
+      <p>KF MEDIA adalah agensi digital yang berdedikasi untuk memberikan solusi kreatif dan inovatif dalam dunia media digital. Kami berkomitmen untuk membantu bisnis Anda tumbuh dan berkembang melalui layanan yang profesional dan berkualitas tinggi.</p>
+      <p>Dengan tim yang berpengalaman dan bersemangat, kami selalu mengutamakan kreativitas, pelayanan terbaik, dan harga yang kompetitif untuk memastikan kepuasan klien kami.</p>
+      <ul class="inline-flex space-x-8 text-green-600 dark:text-green-400 font-semibold text-lg">
+        <li class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg><span>Kreativitas Tinggi</span></li>
+        <li class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg><span>Pelayanan Profesional</span></li>
+        <li class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg><span>Harga Kompetitif</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Layanan Kami -->
+  <section id="services" class="bg-gray-50 dark:bg-gray-800 py-16" data-aos="fade-left">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-12 text-center text-indigo-600 dark:text-indigo-400">Layanan Kami</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Service Card Template -->
+        <div class="service-card bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+          <div class="mb-4 text-indigo-600">
+            <i data-feather="monitor" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Desain Grafis</h3>
+          <p class="flex-grow text-gray-700 dark:text-gray-300 mb-4">Membuat desain visual yang menarik dan profesional untuk kebutuhan branding dan promosi Anda.</p>
+          <button class="btn-order bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded" data-service="Desain Grafis">Pesan Sekarang</button>
+        </div>
+        <div class="service-card bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+          <div class="mb-4 text-indigo-600">
+            <i data-feather="film" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Motion Graphic</h3>
+          <p class="flex-grow text-gray-700 dark:text-gray-300 mb-4">Membuat animasi dan video yang menarik untuk meningkatkan engagement media sosial Anda.</p>
+          <button class="btn-order bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded" data-service="Motion Graphic">Pesan Sekarang</button>
+        </div>
+        <div class="service-card bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+          <div class="mb-4 text-indigo-600">
+            <i data-feather="users" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Sosial Media</h3>
+          <p class="flex-grow text-gray-700 dark:text-gray-300 mb-4">Mengelola akun media sosial Anda dengan strategi yang efektif dan konten berkualitas.</p>
+          <button class="btn-order bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded" data-service="Sosial Media">Pesan Sekarang</button>
+        </div>
+        <div class="service-card bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+          <div class="mb-4 text-indigo-600">
+            <i data-feather="bar-chart-2" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Ads</h3>
+          <p class="flex-grow text-gray-700 dark:text-gray-300 mb-4">Membuat dan mengelola iklan digital untuk meningkatkan penjualan dan brand awareness.</p>
+          <button class="btn-order bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded" data-service="Ads">Pesan Sekarang</button>
+        </div>
+        <div class="service-card bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+          <div class="mb-4 text-indigo-600">
+            <i data-feather="cpu" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Privat Komputer</h3>
+          <p class="flex-grow text-gray-700 dark:text-gray-300 mb-4">Pelatihan komputer privat untuk meningkatkan kemampuan digital Anda.</p>
+          <button class="btn-order bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded" data-service="Privat Komputer">Pesan Sekarang</button>
+        </div>
+        <div class="service-card bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+          <div class="mb-4 text-indigo-600">
+            <i data-feather="hard-drive" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Instalasi OS</h3>
+          <p class="flex-grow text-gray-700 dark:text-gray-300 mb-4">Layanan instalasi sistem operasi untuk komputer dan laptop Anda.</p>
+          <button class="btn-order bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded" data-service="Instalasi OS">Pesan Sekarang</button>
+        </div>
+        <div class="service-card bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+          <div class="mb-4 text-indigo-600">
+            <i data-feather="edit-3" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Penulisan</h3>
+          <p class="flex-grow text-gray-700 dark:text-gray-300 mb-4">Layanan penulisan konten berkualitas untuk kebutuhan website dan media sosial Anda.</p>
+          <button class="btn-order bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded" data-service="Penulisan">Pesan Sekarang</button>
+        </div>
+        <div class="service-card bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+          <div class="mb-4 text-indigo-600">
+            <i data-feather="code" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Web Dev</h3>
+          <p class="flex-grow text-gray-700 dark:text-gray-300 mb-4">Pengembangan website profesional sesuai kebutuhan bisnis Anda.</p>
+          <button class="btn-order bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded" data-service="Web Dev">Pesan Sekarang</button>
+        </div>
+        <div class="service-card bg-white dark:bg-gray-700 rounded-lg shadow p-6 flex flex-col transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg">
+          <div class="mb-4 text-indigo-600">
+            <i data-feather="smartphone" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Software Dev</h3>
+          <p class="flex-grow text-gray-700 dark:text-gray-300 mb-4">Pengembangan aplikasi perangkat lunak yang inovatif dan efisien.</p>
+          <button class="btn-order bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 rounded" data-service="Software Dev">Pesan Sekarang</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Form Order Online -->
+  <section id="order" class="container mx-auto px-4 py-16" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-8 text-center text-indigo-600 dark:text-indigo-400">Form Order Online</h2>
+    <form id="orderForm" class="max-w-3xl mx-auto space-y-6 bg-white dark:bg-gray-700 p-8 rounded shadow" enctype="multipart/form-data">
+      <div>
+        <label for="fullName" class="block mb-2 font-semibold">Nama Lengkap</label>
+        <input type="text" id="fullName" name="fullName" required class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100" />
+      </div>
+      <div>
+        <label for="contactInfo" class="block mb-2 font-semibold">Email / No WhatsApp</label>
+        <input type="text" id="contactInfo" name="contactInfo" required placeholder="Email atau nomor WhatsApp" class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100" />
+      </div>
+      <div>
+        <label for="mainService" class="block mb-2 font-semibold">Layanan Utama</label>
+        <select id="mainService" name="mainService" required class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+          <option value="" disabled selected>Pilih layanan utama</option>
+          <option value="Desain Grafis">Desain Grafis</option>
+          <option value="Motion Graphic">Motion Graphic</option>
+          <option value="Sosial Media">Sosial Media</option>
+          <option value="Ads">Ads</option>
+          <option value="Privat Komputer">Privat Komputer</option>
+          <option value="Instalasi OS">Instalasi OS</option>
+          <option value="Penulisan">Penulisan</option>
+          <option value="Web Dev">Web Dev</option>
+          <option value="Software Dev">Software Dev</option>
+        </select>
+      </div>
+      <div>
+        <label for="subService" class="block mb-2 font-semibold">Sub-Layanan</label>
+        <select id="subService" name="subService" required class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+          <option value="" disabled selected>Pilih sub-layanan</option>
+        </select>
+      </div>
+      <div>
+        <label for="projectDesc" class="block mb-2 font-semibold">Deskripsi Proyek</label>
+        <textarea id="projectDesc" name="projectDesc" rows="4" required class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100"></textarea>
+      </div>
+      <div>
+        <label for="deadline" class="block mb-2 font-semibold">Tanggal Deadline</label>
+        <input type="date" id="deadline" name="deadline" required class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100" />
+      </div>
+      <div>
+        <label for="priceEstimate" class="block mb-2 font-semibold">Estimasi Harga (Rp)</label>
+        <input type="number" id="priceEstimate" name="priceEstimate" min="0" required class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100" />
+      </div>
+      <div>
+        <label for="referenceFile" class="block mb-2 font-semibold">Upload File Referensi</label>
+        <input type="file" id="referenceFile" name="referenceFile" accept=".jpg,.jpeg,.png,.pdf,.doc,.docx" class="w-full text-gray-900 dark:text-gray-100" />
+      </div>
+      <div class="text-center">
+        <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded shadow">Submit</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Portofolio -->
+  <section id="portfolio" class="bg-gray-50 dark:bg-gray-800 py-16" data-aos="fade-up">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-12 text-center text-indigo-600 dark:text-indigo-400">Portofolio</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <img src="https://source.unsplash.com/random/400x300?sig=1" alt="Portfolio 1" class="rounded shadow hover:scale-105 transition-transform duration-300" />
+        <img src="https://source.unsplash.com/random/400x300?sig=2" alt="Portfolio 2" class="rounded shadow hover:scale-105 transition-transform duration-300" />
+        <img src="https://source.unsplash.com/random/400x300?sig=3" alt="Portfolio 3" class="rounded shadow hover:scale-105 transition-transform duration-300" />
+        <img src="https://source.unsplash.com/random/400x300?sig=4" alt="Portfolio 4" class="rounded shadow hover:scale-105 transition-transform duration-300" />
+        <img src="https://source.unsplash.com/random/400x300?sig=5" alt="Portfolio 5" class="rounded shadow hover:scale-105 transition-transform duration-300" />
+        <img src="https://source.unsplash.com/random/400x300?sig=6" alt="Portfolio 6" class="rounded shadow hover:scale-105 transition-transform duration-300" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni Klien -->
+  <section id="testimonials" class="container mx-auto px-4 py-16" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-12 text-center text-indigo-600 dark:text-indigo-400">Testimoni Klien</h2>
+    <div class="max-w-4xl mx-auto relative">
+      <div id="testimonialCarousel" class="overflow-hidden rounded-lg shadow bg-white dark:bg-gray-700 p-8">
+        <div class="testimonial-item text-center space-y-4">
+          <p class="italic text-gray-700 dark:text-gray-300">"KF MEDIA membantu kami meningkatkan brand awareness dengan desain yang sangat kreatif dan profesional."</p>
+          <h4 class="font-semibold text-indigo-600 dark:text-indigo-400">- Andi, CEO Startup</h4>
+        </div>
+        <div class="testimonial-item hidden text-center space-y-4">
+          <p class="italic text-gray-700 dark:text-gray-300">"Pelayanan cepat dan responsif, sangat memuaskan untuk kebutuhan media sosial kami."</p>
+          <h4 class="font-semibold text-indigo-600 dark:text-indigo-400">- Sari, Marketing Manager</h4>
+        </div>
+        <div class="testimonial-item hidden text-center space-y-4">
+          <p class="italic text-gray-700 dark:text-gray-300">"Harga kompetitif dengan kualitas terbaik, sangat direkomendasikan untuk bisnis kecil dan menengah."</p>
+          <h4 class="font-semibold text-indigo-600 dark:text-indigo-400">- Budi, Pemilik Toko Online</h4>
+        </div>
+      </div>
+      <div class="flex justify-center space-x-4 mt-6">
+        <button id="prevTestimonial" aria-label="Previous Testimonial" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded shadow">Sebelumnya</button>
+        <button id="nextTestimonial" aria-label="Next Testimonial" class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded shadow">Berikutnya</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak & Konsultasi -->
+  <section id="contact" class="bg-gray-50 dark:bg-gray-800 py-16" data-aos="fade-up">
+    <div class="container mx-auto px-4 max-w-4xl">
+      <h2 class="text-3xl font-bold mb-8 text-center text-indigo-600 dark:text-indigo-400">Kontak & Konsultasi</h2>
+      <div class="flex flex-col items-center md:items-stretch md:flex-row md:space-x-12">
+        <form id="contactForm" class="w-full bg-white dark:bg-gray-700 p-8 rounded shadow space-y-6">
+          <div>
+            <label for="contactName" class="block mb-2 font-semibold">Nama</label>
+            <input type="text" id="contactName" name="contactName" required class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100" />
+          </div>
+          <div>
+            <label for="contactEmail" class="block mb-2 font-semibold">Email</label>
+            <input type="email" id="contactEmail" name="contactEmail" required class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100" />
+          </div>
+          <div>
+            <label for="contactMessage" class="block mb-2 font-semibold">Pesan</label>
+            <textarea id="contactMessage" name="contactMessage" rows="4" required class="w-full p-3 rounded border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-gray-100"></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-6 py-3 rounded shadow w-full md:w-auto">Kirim Pesan</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 py-8 mt-16">
+    <div class="container mx-auto px-4 max-w-6xl flex flex-col items-center justify-center text-gray-700 dark:text-gray-300">
+      <p class="text-sm text-center mb-2">&copy; 2025 KF MEDIA. All rights reserved.</p>
+      <div class="text-center text-sm space-y-1">
+        <div>
+          <span class="font-semibold">WhatsApp:</span>
+          <a href="https://wa.me/6281234567890" class="text-indigo-600 dark:text-indigo-400 hover:underline break-all">+62 812-3456-7890</a>
+        </div>
+        <div>
+          <span class="font-semibold">Email:</span>
+          <a href="mailto:info@kfmedia.com" class="text-indigo-600 dark:text-indigo-400 hover:underline break-all">info@kfmedia.com</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    feather.replace();
+    AOS.init({
+      duration: 800,
+      once: true,
+    });
+  </script>
+</body>
+</html>

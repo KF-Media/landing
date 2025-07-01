@@ -2,7 +2,7 @@ backend:
   name: github
   repo: KF-Media/landing
   branch: main
-  client_id: Ov23liIE49XpSBAc74KY
+  client_id: Ov23liPIgewKff5gLn8Q
 
 media_folder: "Asset/uploads"
 public_folder: "/Asset/uploads"

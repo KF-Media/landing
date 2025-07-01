@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: KF-Media/landing
   branch: main
 
 media_folder: "Asset/uploads"
